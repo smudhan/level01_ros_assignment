@@ -54,3 +54,14 @@ Bug #4 - testbed_gazebo/CMakeLists.txt
     Result:
     The Gazebo models directory is installed with the testbed_gazebo package,
     matching the path used by the Gazebo launch configuration.
+
+Bug #5 - Caster Wheel Friction
+   
+   Problem: 
+   The caster wheel friction coefficient was set to 0.2, which introduced unnecessary resistance while the robot was moving and affected smooth differential-drive          motion.
+
+   Fix: 
+   Changed the caster wheel friction coefficient from 0.2 to 0.0.
+
+   Result: 
+   Reduced unwanted caster resistance and improved the robot's motion during navigation.
