@@ -66,8 +66,14 @@ amcl:
     recovery_alpha_slow: 0.0
 
     # Initial pose is supplied through /initialpose or RViz
-    set_initial_pose: false
+    set_initial_pose: true
     always_reset_initial_pose: false
+
+    initial_pose:
+      x: 0.0
+      y: 5.0
+      z: 0.0
+      yaw: 0.0
 
     # Disable beam skipping initially because the new scan is behaving well
     do_beamskip: false
