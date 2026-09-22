@@ -17,6 +17,14 @@ The assignment required building a navigation workflow manually with individual 
 - Navigation to multiple goals
 
 The implementation was developed and tested with ROS 2 Humble on Ubuntu 22.04 and Gazebo Classic 11.10.2.
+---
+
+Explanation Video: https://drive.google.com/file/d/14oWKHtbTVp4KpP5GUbqZeqg8gsd4fCJ_/view?usp=sharing
+
+
+<img width="1573" height="997" alt="Screenshot from 2026-09-22 15-31-30" src="https://github.com/user-attachments/assets/a961a4f8-fc29-4618-9d57-9bf69a83c86e" />
+
+<img width="1849" height="1164" alt="Screenshot from 2026-09-22 15-31-45" src="https://github.com/user-attachments/assets/a7409bb2-3fc2-4254-8ef1-1189fa8e9f02" />
 
 ---
 
@@ -156,6 +164,8 @@ There are four launch files involved in the complete workflow:
 4. `navigation.launch.py` - Nav2 navigation stack
 
 Open four terminals and source the workspace in each terminal.
+
+<img width="1847" height="1162" alt="Screenshot from 2026-09-22 15-29-34" src="https://github.com/user-attachments/assets/d8bab4bb-fc1d-4c44-beef-8b794534558d" />
 
 ---
 
@@ -358,6 +368,9 @@ Both costmaps use the robot's LiDAR on:
 
 The LiDAR was configured with a 5 m maximum range and the costmap obstacle/ray-tracing limits were configured accordingly.
 
+<img width="1847" height="1162" alt="Screenshot from 2026-09-22 15-30-58" src="https://github.com/user-attachments/assets/719e9fdc-6734-4a9e-a26a-e373d1ac6bd7" />
+
+
 ---
 
 # Sending a Navigation Goal
@@ -383,6 +396,8 @@ Robot reaches goal
 ```
 
 Multiple navigation goals were tested during development, including goals requiring turning, path following, and recovery behavior. The final configuration successfully reached the tested goals without navigation warnings or errors.
+
+<img width="1849" height="1164" alt="Screenshot from 2026-09-22 15-32-01" src="https://github.com/user-attachments/assets/5cbdaeef-9327-4e6d-a8f0-c5457bb5230d" />
 
 ---
 
